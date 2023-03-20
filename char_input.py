@@ -1,6 +1,9 @@
+def user():
+    names = ["Nick", "Dia", "Nikash", "Diana"]
 
-
-def greeting_user():
-    print("Hello!")
-    name =input("Tell me your name: \n")
-    print(f"Hello {name}, Welcome to Python Exercises!")
+    name = input("Enter your name: \n")
+    # Check the length of the name entered
+    while len(name) < 3:
+        name = input("Please enter a valid name: \n")
+    else:
+        return name
