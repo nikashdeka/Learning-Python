@@ -1,39 +1,45 @@
 import random
 
-# a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-# b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 
-# c = []
+c = []
 
-# #  iterate through list a & b
-# for elem in a:
-#     if elem in b:
-#         c.append(elem)
-#     else:
-#         continue
+#  iterate through list a & b
+for elem in a:
+    if elem in b:
+        c.append(elem)
+    else:
+        continue
 
-# print()
-# print(f"List with common integers = {c}")
+print()
+print(f"List with common integers = {c}")
 
-# print("--------------------------------------------------")
+print("--------------------------------------------------")
 
-# d = [random.randint(2, 20) for elem in range(10)]
-# e = [random.randint(2, 20) for elem in range(10)]
-# f = []
+d = [random.randint(2, 20) for elem in range(10)]
+e = [random.randint(2, 20) for elem in range(10)]
+f = []
 
-# print()
-# print(f"Random list 1 = {d}")
-# print(f"Random list 2 = {e}")
+print()
+print(f"Random list 1 = {d}")
+print(f"Random list 2 = {e}")
 
 
-# for elem in d:
-#     if elem in e:
-#         f.append(elem)
-#     else:
-#         continue
+for elem in d:
+    if elem in e:
+        f.append(elem)
+    else:
+        continue
 
-# print(f"List wih common integers= {d}")
+print(f"List wih common integers= {d}")
 
+
+
+"-----------------------------------------------------------------------"
+"""
+Implemented DRY principle to the iteration process for the lists.
+"""
 
 yourList1 = [random.randint(2, 20) for elem in range(10)]
 yourList2 = [random.randint(2, 20) for elem in range(10)]
